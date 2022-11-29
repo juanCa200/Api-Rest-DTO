@@ -28,7 +28,7 @@ public class EmpleadosController {
 	public EmpleadosServiceImpl service;
 
 	@GetMapping
-	public ResponseEntity<List<EmpleadosDTO>> listar() {
+	public ResponseEntity<List<EmpleadosDTO>> lista() {
 		return new ResponseEntity<>(service.listar(), HttpStatus.OK);
 	}
 
